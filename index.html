@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>点单</title>
+    <link rel="stylesheet" href="./fonts/iconfont.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- 基础页面 -->
+    <div class="main_div">
+      <div id="home_page">
+        <div class="title">欢迎你来了！</div>
+        <div class="search_div">
+          <input type="text" placeholder="请输入菜品名称" class="" />
+          <button>搜索</button>
+        </div>
+        <div class="tab">
+          <div id="tab_all">全部</div>
+          <div id="tab_fish">鱼类</div>
+          <div id="tab_meat">肉类</div>
+          <div id="tab_vegetables_fruits">蔬果</div>
+          <div id="tab_brussels_sprouts">汤菜</div>
+          <div id="tab_constant_point">留言</div>
+        </div>
+        <div class="dish_total">
+          <div class="all_dish"></div>
+          <div class="meat_dish"></div>
+          <div class="fish_dish"></div>
+          <div class="vegetables_fruits_dish"></div>
+          <div class="brussels_sprouts_dish"></div>
+          <div class="constant_point_dish">
+            <div class="leaveMessage">
+              <div class="leaveMessageInfo">
+                <div>
+                  <span>我来了啊！</span>
+                </div>
+                <div><span>评论人XXX</span> / <span>2024:01:09</span></div>
+              </div>
+              <div class="leaveMessageInfo">
+                <div>
+                  <span>我来了啊！</span>
+                </div>
+                <div><span>评论人XXX</span> / <span>2024:01:09</span></div>
+              </div>
+            </div>
+            <div>
+              <input class="leaveMessageInput" type="text" placeholder="请留言。。" />
+              <button class="submitLeaveMessage">确认</button>
+            </div>
+          </div>
+        </div>
+        <div class="clicked">
+          <span>已点</span>
+          <span class="clicked_num">0</span>
+        </div>
+      </div>
+      <div id="clicked_page">
+        <div class="clicked_title">
+          <span id="clicked_page_back" class="clicked_page_back"><i class="iconfont icon-back"></i>返回</span>
+          <span>已点</span>
+        </div>
+        <div class="clicked_content"></div>
+        <div class="determine_box">
+          <div class="determine">确定</div>
+        </div>
+      </div>
+      <div id="in_progress_page">
+        <div class="in_progress_title">
+          <span id="in_progress_page_back" class="back"><i class="iconfont icon-back"></i>返回</span>
+          <div class="init_in_progress_time">
+            <span>进行中</span>
+            <span class="in_progress_time">
+              （用时
+              <span>0</span>
+              时
+              <span>22</span>
+              分
+              <span>8</span>
+              秒 ）
+            </span>
+          </div>
+        </div>
+        <div class="in_progress_content"></div>
+      </div>
+    </div>
+    <!-- 登录页面 -->
+    <div class="login_div">
+      <div class="userName_div">
+        <div>用户名</div>
+        <input id="userName" type="text" value="" />
+      </div>
+      <div class="password_div">
+        <div>密码</div>
+        <input id="password" type="password" placeholder="请输入密码" value="" />
+      </div>
+      <div class="login_button_div">
+        <div id="loginButton">登录</div>
+        <div id="register">注册</div>
+      </div>
+    </div>
+    <div class="notification">用户名或密码错误，登录失败，请重新登录！</div>
+    <!-- 注册页面 -->
+    <div class="register_div">
+      <div class="userName_div">
+        <div>用户名</div>
+        <input id="reUserName" placeholder="请输入用户名" type="text" />
+      </div>
+      <div class="password_div">
+        <div>密码</div>
+        <input id="rePassword" placeholder="请输入密码" type="password" />
+      </div>
+      <div class="password_div">
+        <div>确认密码</div>
+        <input id="rePassword2" placeholder="请再次输入密码" type="password" />
+      </div>
+      <div class="error_tips">
+        <span>请确认输入的两次密码一致</span>
+      </div>
+      <div class="login_button_div">
+        <div id="confirm">确认</div>
+        <div id="cancel">取消</div>
+      </div>
+    </div>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/dish_data.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/leaveMessage.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
